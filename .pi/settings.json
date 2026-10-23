@@ -1,0 +1,4 @@
+{
+  "defaultProvider": "nvidia",
+  "defaultModel": "deepseek-ai/deepseek-v4.1-flash"
+}

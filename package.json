@@ -1,0 +1,38 @@
+{
+  "name": "pi_herness",
+  "version": "0.1.0",
+  "private": true,
+  "description": "pi coding agent extensions: Shift+Tab mode cycle (reading/plan/goal/auto/loop), /agentmemory, dangerous-command gate, lint-on-edit, the scout subagent, git checkpoints, and the unattended loop",
+  "pi": {
+    "extensions": [
+      "./extensions/modes.ts",
+      "./extensions/agentmemory.ts",
+      "./extensions/safety-gate.ts",
+      "./extensions/lint-on-edit.ts",
+      "./extensions/scout.ts",
+      "./extensions/git-checkpoint.ts",
+      "./extensions/clear.ts",
+      "./extensions/memory.ts",
+      "./extensions/loop.ts",
+      "./extensions/tool-filter.ts",
+      "./extensions/tools.ts",
+      "./extensions/questions.ts",
+      "./extensions/handoff.ts",
+      "./extensions/todo.ts",
+      "./extensions/preset.ts",
+      "./extensions/bookmark.ts",
+      "./extensions/session-name.ts"
+    ],
+    "prompts": [
+      "./prompts"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  }
+}

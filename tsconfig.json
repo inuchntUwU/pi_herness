@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@earendil-works/*": [
+        "/usr/local/lib/node_modules/@earendil-works/pi-coding-agent/node_modules/@earendil-works/*"
+      ]
+    }
+  },
+  "include": [
+    "index.ts",
+    "extensions/**/*",
+    "lib/**/*",
+    "test/**/*"
+  ]
+}
